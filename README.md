@@ -72,11 +72,11 @@ No entanto, embora a abordagem do PNG para compressão de imagens seja eficaz em
 
 No mundo da compressão de imagens, o JPEG é, provavelmente, o formato mais renomado. Sua popularidade se deve, em grande parte, à sua eficiência em reduzir o tamanho de arquivos de imagem sem comprometer significativamente a qualidade visual. O segredo por trás da eficácia do JPEG reside em sua capacidade de explorar as nuances da nossa visão.
 
-Nossos olhos são órgãos altamente sensíveis à luz, e, portanto, somos muito mais perceptíveis às variações no nível de iluminação (luminância) em uma imagem do que às variações de cor (crominância). O JPEG inteligentemente usa essa característica da nossa percepção visual para criar imagens compactas por meio de cinco etapas: *color space conversion*, 
+Nossos olhos são órgãos altamente sensíveis à luz, e, portanto, somos muito mais perceptíveis às variações no nível de iluminação (luminância) em uma imagem do que às variações de cor (crominância). O JPEG inteligentemente usa essa característica da nossa percepção visual para criar imagens compactas por meio de cinco etapas: *color space conversion*, *Chrominance Downsampling*, *Discrete Cosine Transform* & Quantização e *Run-Length Encoding & Huffman Coding*.
 
 ### *Color Space Conversion*
 
-A primeira etapa da compressão é a conversão do espaço de cores (*color space conversion*). Cada pixel de uma imagem é composto por três elementos: o nível de vermelho (R), o nível de verde (G) e o nível de azul (B), que juntos determinam a cor de cada pixel. Nesta etapa, esses três elementos de cor são utilizados para encontrar três novos valores: luminância (Y), crominância vermelha (Cb), e crominância azul (Cr). 
+A primeira etapa da compressão é a conversão do espaço de cores (*color space conversion*). Cada pixel de uma imagem é composto por três elementos: o nível de vermelho (R), o nível de verde (G) e o nível de azul (B), que juntos determinam a cor de cada pixel. Nesta etapa, esses três elementos de cor são utilizados para encontrar três novos valores: luminância (Y), crominância vermelha (Cr), e crominância azul (Cb). 
 
 O resultado dessa etapa é que os pixels da imagem são agora representados por esses três novos elementos (Y, Cb e Cr) em vez dos valores originais de vermelho, verde e azul. O importante a notar é que os pixels formados com esses novos elementos são equivalentes em termos de informação visual. Isso significa que a conversão é reversível, e a imagem pode ser restaurada para o seu espaço de cores original sem perda de informações
 
