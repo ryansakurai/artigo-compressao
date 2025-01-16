@@ -72,7 +72,7 @@ No entanto, embora a abordagem do PNG para compressão de imagens seja eficaz em
 
 No mundo da compressão de imagens, o JPEG é, provavelmente, o formato mais renomado. Sua popularidade se deve, em grande parte, à sua eficiência em reduzir o tamanho de arquivos de imagem sem comprometer significativamente a qualidade visual. O segredo por trás da eficácia do JPEG reside em sua capacidade de explorar as nuances da nossa visão.
 
-Nossos olhos são órgãos altamente sensíveis à luz, e, portanto, somos muito mais perceptíveis às variações no nível de iluminação (luminância) em uma imagem do que às variações de cor (crominância). O JPEG inteligentemente usa essa característica da nossa percepção visual para criar imagens compactas por meio de cinco etapas: *color space conversion*, *Chrominance Downsampling*, *Discrete Cosine Transform* & Quantização e *Run-Length Encoding & Huffman Coding*.
+Nossos olhos são órgãos altamente sensíveis à luz, e, portanto, somos muito mais perceptíveis às variações no nível de iluminação (luminância) em uma imagem do que às variações de cor (crominância). O JPEG inteligentemente usa essa característica da nossa percepção visual para criar imagens compactas por meio de cinco etapas: *Color Space Conversion*, *Chrominance Downsampling*, *Discrete Cosine Transform*, Quantização e *Run-Length Encoding & Huffman Coding*.
 
 ### *Color Space Conversion*
 
